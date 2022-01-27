@@ -5,3 +5,5 @@ resources:
   - bitnami.yaml
   - mongodb.yaml
   - secrets.yaml
+  - slack-provider.yaml
+  - alert.yaml
