@@ -4,3 +4,4 @@ namespace: flux-system
 resources:
   - mongodb.yaml
   - secrets.yaml
+  - namespace.yaml
