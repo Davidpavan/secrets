@@ -11,5 +11,16 @@ spec:
         kind: HelmRepository
         name: bitnami
       version: 10.31.1
+      env:
+        - name: SECRET_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: user
+        - name: SECRET_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: password
   interval: 1m0s
   releaseName: mongodb-10.31.1
